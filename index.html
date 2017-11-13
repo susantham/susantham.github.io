@@ -20,20 +20,44 @@ https://www.iconfinder.com/icons/394187/github_icon#size=32
 
         <meta name="author" content="Susan Su Tham">
         <meta name="description" content="The Portfolio of Susan Tham">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|Roboto" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="assets/js/script.js"></script>
+
+
     </head>
 
     <body>
+        <nav class="top-nav-bar">
+            <a href="index.html">Home</a>
+            <a href="pages/projects.html">Projects</a>
+            <a href="pages/resume.html">Resume</a>
+        </nav>
         
-        <h1>Susan</h1>
+        <div class="main">
+        <p id="greeting"></p>
+
         
+        <div id="introduction-container">
+        <div><img id="headshot" class="introduction" src="assets/img/susanheadshot.jpg"></div>
+        
+        <div id="intro-paragraphs" class="introduction">
+            <p id="intro-big">Hi, I'm Susan. Pleased to make your acquaintance!</p>
+            <p>I am currently an Informatics student at the University of California, Irvine. I don’t know what I’m doing with my life, and I'm making the most of it xD. I’ve done things here and there. Raised in San Francisco, studied there for 17 years. I attend UCI for Informatics. Originally Computer Science major. I have my reasons kukuku.</p>
+            <p>I love both, and find that UCI’s community was a great place to be practicing the things done in Informatics, where group projects is really a thing. People work together. I value teamwork, and communication. Group Dynamics is cool and I wanna learn about it more. Interested in the things that a Software Consultant does, because they are there in the software process from end to end. </p>
+            <p>I like anime, manga, listening to music, jpop, FFXIV, J/KMMORPGS, farming simulators, eye candy, aesthetically pleasing things, highly practical and efficient things, nature...
+            </p>
+            
+        </div>
         
         <div>
+        </div>
         </div>
         
         <div class="footer-wrap">
         <footer>
+            <hr>
             <div class="contact-me">
 
             <h2>Let's work together!</h2>
@@ -54,6 +78,12 @@ https://www.iconfinder.com/icons/394187/github_icon#size=32
             </div>    
         </footer>
         </div>
+        </div>
+        
+        <script>
+            document.getElementById("greeting").innerHTML = todaydate();
+        </script>
+
     
 
     </body>
