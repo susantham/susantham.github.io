@@ -443,7 +443,7 @@ body {
     width: 20px;
     height: 20px;
     text-align: center;
-    margin: 1%;
+    margin: 5px;
     
 }
 
@@ -464,6 +464,26 @@ body {
 }
 
 
+
+@media screen and (max-device-width: 420px) { 
+  
+.contact-icons {
+    width: 4em;
+    height: 4em;
+}
+
+#github-icon {
+    width: 4em;
+    height: 4em;
+}
+
+#in-icon {
+    width: 4em;
+    height: 4em;
+}
+
+
+}
 
 
 
