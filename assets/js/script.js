@@ -5,6 +5,8 @@
 
 /*jslint node: true */
 /*eslint-disable no-unused-vars*/
+/*jslint browser: true*/
+/*global $, jQuery, alert, window, setInterval, document*/
 
 'use strict';
 
@@ -27,47 +29,43 @@ function todaydate() {
     return myGreeting;
 }
 
+
 /* Thanks to Marius Craciunoiu
 http://jsfiddle.net/mariusc23/s6mLJ/31/ */
 
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
+// Hide Header on scroll down
+/*var scrollTimeOut = true,
+    lastYPos = 0,
+    yPos = 0,
+    yPosDelta = 5,
+    nav = $('nav.top-nav-bar'),
+    navHeight = nav.outerHeight(),
+    setNavClass = function() {
+        scrollTimeOut = false;
+        yPos = $(window).scrollTop();
 
-$(window).scroll(function(event){
-    didScroll = true;
+        if(Math.abs(lastYPos - yPos) >= yPosDelta) {
+            if (yPos > lastYPos && yPos > navHeight){
+                nav.addClass('hide-nav');
+            } else {
+                nav.removeClass('hide-nav');
+            }
+            lastYPos = yPos;
+        }
+    };
+
+$(window).scroll(function(e){
+    scrollTimeOut = true;
 });
 
 setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
+    if (scrollTimeOut) {
+        setNavClass();
     }
-}, 250);
 
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-    
-    lastScrollTop = st;
-}
+}, 250); 
 
+couldnt get this to work yet...
+*/
 
 // end hiding script from old browsers -->

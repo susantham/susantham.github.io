@@ -22,20 +22,22 @@ https://www.iconfinder.com/icons/394187/github_icon#size=32
         <meta name="description" content="The Portfolio of Susan Tham">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|Roboto" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="assets/js/script.js"></script>
 
 
     </head>
 
     <body>
+        <header>
         <nav class="top-nav-bar">
-            <a href="index.html">Home</a>
-            <a href="pages/projects.html">Projects</a>
-            <a href="pages/resume.html">Resume</a>
+            <ul>
+                <li><a class="fade" href="index.html">Home</a></li>
+                <li><a class="fade" href="pages/projects.html">Projects</a></li>
+                <li><a class="fade" href="pages/resume.html">Resume</a></li>
+            </ul>
         </nav>
+        </header>
         
-        <div class="main">
+        <main>
         <p id="greeting"></p>
 
         
@@ -54,9 +56,10 @@ https://www.iconfinder.com/icons/394187/github_icon#size=32
         <div>
         </div>
         </div>
+            
+        </main>
         
-        <div class="footer-wrap">
-        <footer>
+        <footer class="footer-wrap">
             <hr>
             <div class="contact-me">
 
@@ -75,11 +78,16 @@ https://www.iconfinder.com/icons/394187/github_icon#size=32
                 <a href="mailto:susan.tham963@gmail.com" target="_blank">
                     <img class="contact-icons" id="mail-icon" src="assets/img/if_mail-24_103176.svg" alt="mailto:susan.tham963@gmail.com"> </a>
             </div>
-            </div>    
+            </div>
+            
+            <div>
+                <p>Created by Susan Su Tham</p>
+            </div>
         </footer>
-        </div>
-        </div>
-        
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+
+        <script src="assets/js/script.js"></script>
         <script>
             document.getElementById("greeting").innerHTML = todaydate();
         </script>
