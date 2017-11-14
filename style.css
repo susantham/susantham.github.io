@@ -578,7 +578,25 @@ hr {
     margin: 20px;
 }
 
-    
+/*project alexa section*/
+.alexa-project {
+    width: 42%;
+    margin: 2%;
+}
+
+#alexa-img{
+    float:left;
+    margin-left: 6%;
+}
+
+
+#alexa-desc {
+    float: right;
+    margin-right: 6%;
+    text-align: left;
+    line-height: 1.15;
+}
+
 @media screen and (max-width: 768px) { 
 
 
@@ -599,14 +617,14 @@ main {
     height: 2em;
 }
 
-#headshot {
+#headshot, #alexa-img {
     float: none;
     clear: right;
     vertical-align: center;
-    width: 60%
+    width: 60%;
 }
 
-#intro-paragraphs {
+#intro-paragraphs, #alexa-desc {
     float: none;
     clear: left;
     text-align: justify;
@@ -624,10 +642,13 @@ main {
 
 @media screen and (max-width: 480px) { 
 
-#headshot {
+#headshot, #alexa-img {
     width: 250px;
     height: 250px;
     margin: 5%;
+}
+#alexa-desc {
+    margin-top: 70px;
 }
     
 .contact-icons, #github-icon, #in-icon {
