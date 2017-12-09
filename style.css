@@ -597,6 +597,15 @@ hr {
     line-height: 1.15;
 }
 
+.findings {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+}
+
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 768px) { 
 
 
@@ -636,7 +645,12 @@ main {
     text-align: left;
 }
 
-
+.findings {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+    
 }
 
 
@@ -656,6 +670,10 @@ main {
     height: 4em;
 }
 
+.findings {
+    text-align: center;
+    margin: 3%;
+}
 
     
 @media screen and (max-width: 420px) { 
@@ -678,6 +696,11 @@ main {
 
 .top-nav-bar {
   height: 60px;
+}
+
+.findings {
+    text-align: center;
+    margin: 1%;
 }
     
     
